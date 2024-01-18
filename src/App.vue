@@ -30,10 +30,10 @@ onMounted(() => {
       </div>
     </div>
 
-    <div v-for="item in todos" :key="item.id" class="bg-slate-200 shadow-sm px-5 py-2.5 my-2 flex justify-between">
+    <div v-for="item in todos" :key="item.id" :class="(item.done == 0) ? 'bg-slate-200 shadow-sm px-5 py-2.5 my-2 flex justify-between' : 'bg-red-200 shadow-sm px-5 py-2.5 my-2 flex justify-between'">
       <input type="checkbox" :checked="(item.done == 1)" @change="updateTodo(item)" class="w-6 h-6 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
       
-      <span class="text-slate-900 font-bold">{{ item.name }}</span>
+      <span :class="(item.done == 0) ? 'text-slate-900 font-bold' : 'text-slate-900 font-bold line-through'">{{ item.name }}</span>
 
       <button class="" @click="deleteTodo(item.id)">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="red"
