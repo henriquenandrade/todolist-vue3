@@ -31,9 +31,10 @@ Caso deseje coloca em produção, execute:
 npm run build
 ```
 
-Para o funcionamento do projeto o backend deve estar em execução no seguinte endereço:
+Para o funcionamento do projeto o back-end deve estar em execução no seguinte endereço:
 ```sh
 http://localhost:8000
 ```
 
-Para saber como rodar o back-end criando com Codeigniter 4 acesse o repositório do projeto: [API Codeigniter 4](git@github.com:henriquenandrade/ci4-todolist-api.git) e siga as instruções para a instalação.
+Para saber como rodar o back-end criado com Codeigniter 4 acesse o repositório do projeto:
+[API Codeigniter 4](https://github.com/henriquenandrade/ci4-todolist-api) e siga as instruções para a instalação.
