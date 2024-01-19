@@ -1,8 +1,39 @@
-# Vue 3 + Vite
+# Todo List Vuejs
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Aplicação de lista de tarefas com [Vuejs 3](https://vuejs.org/) usando Composition API e [Tailwind CSS](https://tailwindcss.com/) para estilização.
 
-## Recommended IDE Setup
+O projeto foi criado para testar uma API criada com Codeigniter 4 e também para entender melhor os conceitos do vuejs na versão 3.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-# todolist-vue3
+## Instalando o projeto
+
+Clone o repositório do projeto para sua máquina:
+```sh
+git clone git@github.com:henriquenandrade/todolist-vue3.git
+```
+
+Acesse a pasta do projeto e instale as dependências:
+```sh
+cd todolist-vue3 && npm install
+```
+
+Dependências:
+
+ - axios: ^1.6.5
+ - vue: ^3.3.11
+
+Execute a aplicação:
+```sh
+npm run dev
+```
+
+Caso deseje coloca em produção, execute:
+```sh
+npm run build
+```
+
+Para o funcionamento do projeto o backend deve estar em execução no seguinte endereço:
+```sh
+http://localhost:8000
+```
+
+Para saber como rodar o back-end criando com Codeigniter 4 acesse o repositório do projeto: [API Codeigniter 4](git@github.com:henriquenandrade/ci4-todolist-api.git) e siga as instruções para a instalação.
